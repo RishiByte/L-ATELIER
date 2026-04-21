@@ -1283,7 +1283,7 @@
                                                 const cx = bx + barW / 2;
                                                 const name = meal.strMeal.length > 13 ? meal.strMeal.slice(0, 12) + '…' : meal.strMeal;
                                                 return (
-                                                    <g key={idx} onClick={() => setViewMeal(meal)} style={{ cursor: 'pointer' }} className="group">
+                                                    <g key={idx} className="group">
                                                         {/* Animated Bar with Gradient */}
                                                         <rect x={bx} y={by} width={barW} height={bh} rx="4" ry="4"
                                                             fill={`url(#grad-${idx})`} filter="url(#shadow)" className="bar-animate"
